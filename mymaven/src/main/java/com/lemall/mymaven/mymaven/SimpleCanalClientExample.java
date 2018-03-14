@@ -27,6 +27,7 @@ public static void main(String args[]) {
     try {
         connector.connect();
         connector.subscribe(".*\\..*");
+        // connector.subscribe("lemall.ky_user,lemall.ky_user2");
         connector.rollback();
         int totalEmptyCount = 12000;
         while (emptyCount < totalEmptyCount) {
